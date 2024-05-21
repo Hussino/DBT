@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+    - name: executive_dashboard
+      label: Executive Dashboard
+      type: dashboard
+      maturity: low
+      url: https://fa9f460d.us1a.app.preset.io/superset/dashboard/p/B5Vqbno9Kv1/
+      description: Executive Dashboard about Airbnb listings and hosts
+
+      depends_on:
+        - ref('dim_listings_with_hosts')
+        - ref('mart_fullmoon_reviews')
+    
+      owner:
+        name: Hussein Al-Shami
+        email: hussien@example.com
